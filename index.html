@@ -3,23 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>조은솔</title>
+  <title>조은솔의 페이지</title>
+  <!-- 외부 스타일 시트 -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- 내부 스타일 시트 -->
+  <style>
+    strong {
+      background-color: aqua;
+    }
+  </style>
+
 </head>
 <body>
   Hello world
   <p>p태그는 단락 태그</p>
+  <strong id="text-red">strong태그는 굵게</strong>
+  <br>
   <strong>strong태그는 굵게</strong>
   <!-- 줄 바꾸기 태그 -->
   <br>
-  <div style="border: 1px solid purple">
+  <div style="border: 3px solid purple">
     <p>img태그
       <br>
       <img
-       src="https://www.bizhankook.com/upload/bk/article/202507/thumb/29894-72996-sample.jpg"
-       alt="케데헌 이미지"
-       width="500">
+        src="https://www.bizhankook.com/upload/bk/article/202507/thumb/29894-72996-sample.jpg"
+        alt="헌트릭스 이미지"
+      >
+      <img
+        src="https://i.namu.wiki/i/zBfh3HAxkry06VqcXVCpAP8zCP8biAtnpWV1YCJPLLjcXfX3ECqiZXBI12f0xhxNrgoYBdvvGK5GBoGjNvpPkQ.webp"
+        alt="사자보이즈 이미지"
+      >
     </p>
     <a href="https://www.naver.com/" target="_blank">네이버</a>
+    <span>
+      <a href="">자식 CSS 테스트</a>
+    </span>
+    <a href="">형제 CSS 테스트</a>
   </div>
   <!-- 제목 태그 -->
   <h1><span style="color: purple">제목1</span>입니다</h1>
@@ -34,9 +53,9 @@
   <!-- ul : 순서가 없는 리스트 -->
   <h3>이번 강의에서 다룰 언어</h3>
   <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Javascript</li>
+    <li class="text-large">HTML</li>
+    <li class="text-large">CSS</li>
+    <li class="text-large">Javascript</li>
   </ul>
   <!-- ol : 순서가 있는 리스트 -->
   <h5>유노윤호의 레슨</h5>
@@ -47,10 +66,10 @@
   </ol>
   <!-- Form 요소들 : 입력양식 -->
   <form action="">
-    <label for="id">ID : </label>
+    <label for="id" class="text-large">ID : </label>
     <input type="text" id="id" name="user-id" value="" placeholder="아이디를 입력해주세요" required>
     <br>
-    <label for="pw">PW : </label>
+    <label for="pw" class="text-large">PW : </label>
     <input type="password" id="pw" name="user-pw" value="" placeholder="비밀번호를 입력해주세요" required>
     <br>
     <!-- 제출 버튼 만드는 2가지 방법 -->
@@ -75,7 +94,7 @@
     <label for="gender1">남성</label>
     <input type="radio" name="gender" value="female" id="gender2">
     <label for="gender2">여성</label>
-    <br><br>
+    <br>
     <input type="submit" value="제출">
   </form>
 </body>

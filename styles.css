@@ -1,3 +1,6 @@
+/* 스타일 초기화 */
+@import url('reset.css');
+
 /* 기본 선택자 */
 div {
   background-color: blue;
